@@ -76,6 +76,7 @@ nav{
 #add-task-btn:hover{
     transform: scale(1.05);
     transition: 1ms;
+    cursor: pointer;
 }
 
 .output-task-container{
@@ -89,11 +90,10 @@ nav{
     height: auto;
 }
 
-.task-item{
+.task-item-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family:cursive;
     width: 80%;
     background-color: #fff;
     margin-left: 50px;
@@ -101,12 +101,16 @@ nav{
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 18px;
-    overflow:hidden;
 
 }
 
-#done-btn{
-    border-radius: 50%;
+
+#done-btn, #delete-btn:hover{
+    cursor: pointer;
+}
+
+#delete-btn{
+   background-color:rgb(255, 109, 109);
 }
 
 .task-completed{
@@ -114,5 +118,10 @@ nav{
     text-decoration-color: #6D9886;
     text-decoration-thickness: 3px;
 
+}
+
+.button-container{
+    display: flex;
+    gap: 12px;
 }
 
