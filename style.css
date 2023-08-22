@@ -90,6 +90,9 @@ nav{
 }
 
 .task-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family:cursive;
     width: 80%;
     background-color: #fff;
@@ -102,4 +105,14 @@ nav{
 
 }
 
+#done-btn{
+    border-radius: 50%;
+}
+
+.task-completed{
+    text-decoration: line-through;
+    text-decoration-color: #6D9886;
+    text-decoration-thickness: 3px;
+
+}
 
